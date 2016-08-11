@@ -1,0 +1,236 @@
+					<!Doctype html>
+					<html lang="en">
+					
+					<!-- 
+						INFO
+					name: Fancy portal
+					version: 0.1
+					author: lim_bo56
+				-->
+					<!--
+
+					Fancy portal is a free portal template for minecraft servers.
+
+					License: https://github.com/limbo56/FancyPortal/blob/master/LICENSE.md
+
+					Please don't remove this message.
+				-->
+				
+				<head>
+					<!-- Here type the name of your server !-->
+					<title>Site name | Welcome</title>
+					
+					<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+					
+					<link rel="stylesheet" type="text/css" href="css/style.css">
+					<link rel="stylesheet" type="text/css" href="css/loading.css">
+					<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+					<link type='text/css' href='https://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' >
+					
+					<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+					
+					<!-- Some description that you want to add to your page!-->
+					<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+					
+					<!-- Keywords that player inputs to find your webpage !-->
+					<meta name="ketwords" content="Minecraft, minecraft servers, popular minecraft networks">
+					
+					<meta name="author" content="lim_bo56">
+					
+					<script type="text/javascript">
+						
+						window.addEventListener("load", function(){
+							var load_screen = document.getElementById("load_screen");
+							document.body.removeChild(load_screen);
+						});
+						
+					</script>
+					
+					<script type="text/javascript">
+						
+						var clipboard = new Clipboard("#copy");
+						
+						clipboard.on('success', function(e) {
+							console.log(e);
+						});
+						clipboard.on('error', function(e) {
+							console.log(e);
+						});
+						
+					</script>
+					
+				</head>
+				
+				<body ondragstart="return false;">
+					
+					<div id="load_screen">
+						
+						<div id="loading">
+							
+							<div class="cssload-preloader cssload-loading">
+								<span class="cssload-slice"></span>
+								<span class="cssload-slice"></span>
+								<span class="cssload-slice"></span>
+								<span class="cssload-slice"></span>
+								<span class="cssload-slice"></span>
+								<span class="cssload-slice"></span>
+							</div>
+							
+						</div>
+						
+					</div> 
+					
+					<!-- Header section -->
+					<section id="Header">
+						
+						<div id="Container">
+							
+							<nav>
+								<ul>
+									<li>
+										<a href="">
+											
+											<div class="anim">
+												<span class="-anim">
+													<i class="fa fa-folder-open" aria-hidden="true" style="color: rgba(254, 223, 0, 1);"></i>
+												</span>
+												<span>
+													Forum
+												</span>
+											</div>
+											
+										</a>
+									</li>
+									<li>
+										<a href="">
+											
+											<div class="anim">
+												<span class="-anim">
+													<i class="fa fa-home" aria-hidden="true" style="color: rgba(106, 140, 249, 1);"></i>
+												</span>
+												<span>
+													Home
+												</span>
+											</div>
+											
+										</a>
+									</li>
+									<li><a href="">
+										
+										<div class="anim">
+											<span class="-anim">
+												<i class="fa fa-shopping-cart" aria-hidden="true" style="color: rgba(0, 208, 74, 1);"></i>
+											</span>
+											<span>
+												Store
+											</span>
+										</div>
+										
+									</a>
+								</li>
+							</ul>
+						</nav>
+						
+						<!-- 
+						Set "src" where your background image is 
+						Example: "src=images/background.jpg"
+					-->
+					<img id="Background" src="images/background.jpg">
+					
+					<div id="Logo" >
+						 			<!-- 
+									Set "src" where your logo image is 
+									Example: "src=images/logo.png"
+								-->
+								<img style="background-repeat: no-repeat;max-width: 100%;min-width: 100%;" src="images/logo.png">
+							</div>
+							
+						</div>
+						
+					</section>
+					
+					<!-- Body section -->
+					<section id="Body">
+						
+						<div id="Container">
+							
+							<section id="ServerInfo">
+								
+								<div id="Online">
+
+									<p>
+										Join the other
+										<span class="players-online">?</span>
+										players
+									</p>
+
+								</div>
+								
+								<div id="Ip">
+						  		<!-- 
+								Set this to your server ip.
+								Change "data-clipboard-text" to your ip.
+								Example: "data-clipboard-text="mc.example.net"
+							-->																								
+							<p id="copy" class="btn btn-copy" data-clipboard-text="mc.hypixel.net">mc.hypixel.net</p> <!-- Also change this line to your ip -->
+
+						</div>
+						
+					</section>
+					
+					
+					
+					<div id="SocialContainer">
+							<!-- 
+							Change where it says href to your twitter page
+							Example: https://twitter.com/lim_bo66
+						-->
+						<a href=" ">
+							<i class="fa fa-twitter-square Social" style="text-decoration: none;" aria-hidden="true"></i>
+						</a>
+						 	<!-- 
+							Change where it says href to your facebook page
+							Example: https://www.facebook.com/zuck
+						-->
+						<a href=" ">
+							<i class="fa fa-facebook-square Social" style="text-decoration: none;" aria-hidden="true"></i>
+						</a>
+						    <!-- 
+							Change where it says href to your facebook page
+							Example: https://www.youtube.com/channel/UC1MtBclG_aHPd0nLmUupCKg
+						-->
+						<a href=" ">
+							<i class="fa fa-youtube-square Social" style="text-decoration: none;" aria-hidden="true"></i>
+						</a>
+						
+					</div>
+					
+					<!-- Change this to your server name -->
+					<!-- Please don't remove this line, this is just to give creadits to the author -->
+					<p id="Copy">Copyright &copy; YourServerName - Designed by <a href="https://twitter.com/lim_bo66" id="Designer">lim_bo56</a></p>
+
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<script src="js/script.js"></script>
+					<script src="js/zeroclipboard.js"></script>
+
+					<script type="text/javascript">
+						
+						var clipboard = new Clipboard("#copy");
+						
+						clipboard.on('success', function(e) {
+							console.log(e);
+						});
+						clipboard.on('error', function(e) {
+							console.log(e);
+						});
+						
+					</script>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		
+	</body>
+	</html>
