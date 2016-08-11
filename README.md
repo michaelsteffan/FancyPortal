@@ -12,7 +12,7 @@
 ###2. There are going to be comments that will be guiding you, where some texts are.
 ###3. Edit the texts on the index.html.
 
-YAY, YOU CHANGED TEXTS ON PAGE!
+###YAY, YOU CHANGED TEXTS ON PAGE!
 
 ## HOW TO SETUP SO IT GETS YOUR SERVER DATA ?
 
@@ -20,4 +20,4 @@ YAY, YOU CHANGED TEXTS ON PAGE!
 ###2. At the top of the file there are going to be some variables.
 ###3. Adjust the variables to your server information.
 
-YAY, YOU HAVE SETTED UP YOUR SERVER DATA!
+###YAY, YOU HAVE SETTED UP YOUR SERVER DATA!
