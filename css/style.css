@@ -1,1 +1,325 @@
-  body {margin: 0; padding: 0; overflow-x: hidden; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font: 100%; background: #f5f5f5; } html {font-size: 62.5%; width: 100%; } div#load_screen{background: #000; opacity: 1; position: fixed; z-index:10; top: 0px; width: 100%; height: 1600px; } div#load_screen > div#loading{color:#FFF; width:120px; height:24px; position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; } #Logo {display: table; text-align: center; margin: 0 auto; height: auto; } #Background {position: fixed; top: 0px; left: 0; min-width: 100%; min-height: 100%; background-repeat: no-repeat; -webkit-filter: blur(3px) grayscale(45%); filter: blur(3px) grayscale(45%); z-index: -1; } section#ServerInfo {text-transform: uppercase; font-size: 6rem; } section#ServerInfo #Ip {text-align: center; } section#ServerInfo #Ip p {color: #FFFFFF; font-family: 'Dosis',sans-serif; font-weight: 800; } section#ServerInfo #Online p {text-align: center; color: #FFFFFF; font-family: 'Arvo',sans-serif; font-weight: 800; } .btn {display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; margin: 0 auto; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; } .btn {padding: 11px 12px 11px; border-width: 0 1px 4px 1px; font-size: 6rem; font-weight: bold; } .btn-copy {background-color: #00BFFF; border-color: #00A1FF; } .btn-copy:hover {background-color: #00ABFF; border-color: #008DFF; cursor: pointer; } #Copy {position: relative; color: white; font: 0rem'Dosis',sans-serif; font-size: 3.2rem; text-align: center; left: 4px; -webkit-animation: c .5s ease-in-out 5.5s 1 forwards; animation: c .5s ease-in-out 5.5s 1 forwards; } #Designer {text-decoration: none; color: #40A7E5; font: 0rem 'Dosis',sans-serif; font-size: 3.2rem; transition: all .5s; -webkit-animation: c .5s ease-in-out 5.5s 1 forwards; animation: c .5s ease-in-out 5.5s 1 forwards; } #Designer:hover {color: #40C5E5; } #SocialContainer {position: relative; margin: 0 auto; text-align: center; margin-top: 5rem; } #SocialContainer a {position: relative; text-decoration: none; top: 5px; transition: all .5s; font-size: 7rem; } #SocialContainer a i:nth-child(1) {color: #4099FF; -webkit-animation: c .5s ease-in-out 4s 1 forwards; animation: c .5s ease-in-out 4s 1 forwards; } #SocialContainer a:nth-child(2) i:nth-child(1) {color: #3B5998; -webkit-animation: c .5s ease-in-out 4.5s 1 forwards; animation: c .5s ease-in-out 4.5s 1 forwards; } #SocialContainer a:nth-child(3) i:nth-child(1) {color: #d85651; -webkit-animation: c .5s ease-in-out 5s 1 forwards; animation: c .5s ease-in-out 5s 1 forwards; } #SocialContainer a i:hover, #SocialContainer a:nth-child(2) i:nth-child(1):hover,#SocialContainer a:nth-child(3) i:nth-child(1):hover {color: #98FB98; } .players-online {color: #fff49f; } .offline {color: red; text-decoration: underline; } nav {background: #36404A; border-bottom: 5px solid #2B333B; } nav ul {display: table; margin: 0 auto; padding: 0px; } nav ul li {float: left; } nav ul li a {text-decoration: none; list-style-type: none; color: #ffffff; font: normal normal 800 .1em/.1em 'Dosis',sans-serif; font-size: 3.4rem; font-weight: 800; text-transform: uppercase; padding: 0px; } .anim span {color: white; text-decoration: none; text-align: center; display: block; } .canim, .-anim{transition: 0.3s; } .anim {height: 64px; font: normal normal 800 1em/4em Arial,sans-serif; overflow: hidden; width: 100px; } .-anim {font-size: 6rem; } .anim:hover .-anim{margin-top: -2.2em; } ul {list-style-type: none; } @font-face {font-family: 'Dosis'; font-style: normal; font-weight: 400; src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/guC5lwT5Dw7anV_xfpCGqw.ttf) format('truetype'); } @media all and (max-height:1100px),all and (max-width:1100px) {html{font-size: 5.5px; } #Logo {width: 500px; } } @media all and (max-height:1000px),all and (max-width:960px) {html {font-size: 5.5px; } } @media all and (max-height:900px),all and (max-width:860px) {html {font-size:7px; } } @media all and (max-height:800px),all and (max-width:770px) {html {font-size: 5.5px; } } @media all and (max-height:700px),all and (max-width:660px) {html {font-size: 5px; } } @media all and (max-height:570px),all and (max-width:490px) {html {font-size: 2.62px; } #Logo {width: 500px; } } @media all and (max-height:410px),all and (max-width:400px) {html {font-size: 4px; } #Logo {width: 500px; } } @media all and (max-height:320px),all and (max-width:568px) {html {font-size: 5px; overflow: scroll; } #Logo {width: 320px; } nav ul li {float: left; margin-right: -20px; } nav ul {display: table; margin: 0 auto; padding: 0px; } }
+  body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font: 100%;
+      background: #f5f5f5;
+  }
+  
+  html {
+      font-size: 62.5%;
+      width: 100%;
+  }
+  
+  div#load_screen {
+      background: #000;
+      opacity: 1;
+      position: fixed;
+      z-index: 10;
+      top: 0px;
+      width: 100%;
+      height: 1600px;
+  }
+  
+  div#load_screen > div#loading {
+      color: #FFF;
+      width: 120px;
+      height: 24px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+  }
+  
+  #Logo {
+      display: table;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+  }
+  
+  #Background {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      background-repeat: no-repeat;
+      -webkit-filter: blur(3px) grayscale(45%);
+      filter: blur(3px) grayscale(45%);
+      z-index: -1;
+  }
+  
+  section#ServerInfo {
+      text-transform: uppercase;
+      font-size: 6rem;
+  }
+  
+  section#ServerInfo #Ip {
+      text-align: center;
+  }
+  
+  section#ServerInfo #Ip p {
+      color: #FFFFFF;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 800;
+  }
+  
+  section#ServerInfo #Online p {
+      text-align: center;
+      color: #FFFFFF;
+      font-family: 'Arvo', sans-serif;
+      font-weight: 800;
+  }
+  
+  .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      margin: 0 auto;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+  }
+  
+  .btn {
+      padding: 11px 12px 11px;
+      border-width: 0 1px 4px 1px;
+      font-size: 6rem;
+      font-weight: bold;
+  }
+  
+  .btn-copy {
+      background-color: #00BFFF;
+      border-color: #00A1FF;
+  }
+  
+  .btn-copy:hover {
+      background-color: #00ABFF;
+      border-color: #008DFF;
+      cursor: pointer;
+  }
+  
+  #Copy {
+      position: relative;
+      color: white;
+      font: 0rem'Dosis', sans-serif;
+      font-size: 3.2rem;
+      text-align: center;
+      left: 4px;
+      -webkit-animation: c .5s ease-in-out 5.5s 1 forwards;
+      animation: c .5s ease-in-out 5.5s 1 forwards;
+  }
+  
+  #Designer {
+      text-decoration: none;
+      color: #40A7E5;
+      font: 0rem 'Dosis', sans-serif;
+      font-size: 3.2rem;
+      transition: all .5s;
+      -webkit-animation: c .5s ease-in-out 5.5s 1 forwards;
+      animation: c .5s ease-in-out 5.5s 1 forwards;
+  }
+  
+  #Designer:hover {
+      color: #40C5E5;
+  }
+  
+  #SocialContainer {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 5rem;
+  }
+  
+  #SocialContainer a {
+      position: relative;
+      text-decoration: none;
+      top: 5px;
+      transition: all .5s;
+      font-size: 7rem;
+  }
+  
+  #SocialContainer a i:nth-child(1) {
+      color: #4099FF;
+      -webkit-animation: c .5s ease-in-out 4s 1 forwards;
+      animation: c .5s ease-in-out 4s 1 forwards;
+  }
+  
+  #SocialContainer a:nth-child(2) i:nth-child(1) {
+      color: #3B5998;
+      -webkit-animation: c .5s ease-in-out 4.5s 1 forwards;
+      animation: c .5s ease-in-out 4.5s 1 forwards;
+  }
+  
+  #SocialContainer a:nth-child(3) i:nth-child(1) {
+      color: #d85651;
+      -webkit-animation: c .5s ease-in-out 5s 1 forwards;
+      animation: c .5s ease-in-out 5s 1 forwards;
+  }
+  
+  #SocialContainer a i:hover,
+  #SocialContainer a:nth-child(2) i:nth-child(1):hover,
+  #SocialContainer a:nth-child(3) i:nth-child(1):hover {
+      color: #98FB98;
+  }
+  
+  .players-online {
+      color: #fff49f;
+  }
+  
+  .offline {
+      color: red;
+      text-decoration: underline;
+  }
+  
+  nav {
+      background: #36404A;
+      border-bottom: 5px solid #2B333B;
+  }
+  
+  nav ul {
+      display: table;
+      margin: 0 auto;
+      padding: 0px;
+  }
+  
+  nav ul li {
+      float: left;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #ffffff;
+      font: normal normal 800 .1em/.1em 'Dosis', sans-serif;
+      font-size: 3.4rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0px;
+  }
+  
+  .anim span {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+  }
+  
+  .canim,
+  .-anim {
+      transition: 0.3s;
+  }
+  
+  .anim {
+      height: 64px;
+      font: normal normal 800 1em/4em Arial, sans-serif;
+      overflow: hidden;
+      width: 100px;
+  }
+  
+  .-anim {
+      font-size: 6rem;
+  }
+  
+  .anim:hover .-anim {
+      margin-top: -2.2em;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  
+  @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/guC5lwT5Dw7anV_xfpCGqw.ttf) format('truetype');
+  }
+  
+  @media all and (max-height:1100px),all and (max-width:1100px) {
+      html {
+          font-size: 5.5px;
+      }
+      #Logo {
+          width: 500px;
+      }
+  }
+  
+  @media all and (max-height:1000px),all and (max-width:960px) {
+      html {
+          font-size: 5.5px;
+      }
+  }
+  
+  @media all and (max-height:900px),all and (max-width:860px) {
+      html {
+          font-size: 7px;
+      }
+  }
+  
+  @media all and (max-height:800px),all and (max-width:770px) {
+      html {
+          font-size: 5.5px;
+      }
+  }
+  
+  @media all and (max-height:700px),all and (max-width:660px) {
+      html {
+          font-size: 5px;
+      }
+  }
+  
+  @media all and (max-height:570px),all and (max-width:490px) {
+      html {
+          font-size: 2.62px;
+      }
+      #Logo {
+          width: 500px;
+      }
+  }
+  
+  @media all and (max-height:410px),all and (max-width:400px) {
+      html {
+          font-size: 4px;
+      }
+      #Logo {
+          width: 500px;
+      }
+  }
+  
+  @media all and (max-height:320px),all and (max-width:568px) {
+      html {
+          font-size: 5px;
+          overflow: scroll;
+      }
+      #Logo {
+          width: 320px;
+      }
+      nav ul li {
+          float: left;
+          margin-right: -20px;
+      }
+      nav ul {
+          display: table;
+          margin: 0 auto;
+          padding: 0px;
+      }
+  }
